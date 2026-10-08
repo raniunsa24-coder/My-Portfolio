@@ -102,8 +102,8 @@ My-Portfolio/
 |------|------|--------|
 | ![Mobile Home](screenshots/mobile-home.jpg) | ![Mobile Menu](screenshots/mobile-menu.jpg) | ![Mobile Skills](screenshots/mobile-skills.jpg) |
 
-| Projects | Contact | Contact Form & Footer |
-|----------|---------|-----------------------|
+| Projects | Contact | Contact Form |
+|----------|---------|--------------|
 | ![Mobile Projects](screenshots/mobile-projects.jpg) | ![Mobile Contact](screenshots/mobile-contact.jpg) | ![Mobile Form](screenshots/mobile-form.jpg) |
 
 ### Code Screenshots

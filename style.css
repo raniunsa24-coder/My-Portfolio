@@ -1125,7 +1125,8 @@ p {
 
 .footer-links {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 12px 25px;
 }
 
 
@@ -1632,6 +1633,11 @@ p {
         text-align: center;
     }
 
+
+    .footer-links {
+        justify-content: center;
+    }
+
 }
 
 
@@ -1973,6 +1979,110 @@ html {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+
+}
+
+
+/* =====================================================
+   CSS-ONLY BEHAVIOUR (no JavaScript used on this site)
+   ===================================================== */
+
+
+/* Scroll-reveal animation: content is always visible by default.
+   Browsers that support scroll-driven animations add a soft fade-up. */
+.reveal {
+    opacity: 1;
+    transform: none;
+}
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@supports (animation-timeline: view()) {
+
+    .reveal {
+        animation: revealUp linear backwards;
+        animation-timeline: view();
+        animation-range: entry 0% entry 35%;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal {
+        animation: none;
+    }
+
+}
+
+
+/* Mobile navigation: a swipeable link bar under the logo (no menu button) */
+@media (max-width: 800px) {
+
+    html {
+        scroll-padding-top: 125px;
+    }
+
+    .header {
+        height: 104px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navbar {
+        position: static;
+        width: 100%;
+        padding: 0 0 6px;
+        background: transparent;
+        border-bottom: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar a {
+        flex: 0 0 auto;
+        padding: 6px 0;
+    }
+
+    .navbar a:not(.hire-btn)::after {
+        bottom: 0;
+    }
+
+    .hire-btn {
+        margin-left: 0;
+        padding: 8px 16px;
+    }
+
+    .hero {
+        padding-top: 150px;
     }
 
 }
