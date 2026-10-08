@@ -10,12 +10,13 @@ A modern, professional and fully responsive personal portfolio website built wit
 
 ## Project Description
 
-This portfolio showcases my profile, technical skills, education, projects and contact information through a clean, dark and elegant web interface with a gold accent color. The whole website is designed and styled with my own HTML and CSS code. No Bootstrap, Tailwind CSS, UI frameworks or downloaded templates were used.
+This portfolio showcases my profile, technical skills, education, projects and contact information through a clean, dark and elegant web interface with a gold accent color. The whole website is designed and styled with my own HTML and CSS code, with a small amount of plain JavaScript for the mobile menu and scroll animations. No Bootstrap, Tailwind CSS, UI frameworks or downloaded templates were used.
 
 ## Technologies Used
 
 - **HTML5**: semantic page structure
 - **CSS3**: custom styling, Flexbox/Grid layouts, media queries, hover effects and animations
+- **JavaScript (vanilla)**: a small script for the mobile menu toggle and scroll-reveal animations (no libraries or frameworks)
 - **Git & GitHub**: version control and repository hosting
 - **Netlify**: website deployment
 
