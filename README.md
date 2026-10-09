@@ -10,27 +10,26 @@ A modern, professional and fully responsive personal portfolio website built wit
 
 ## Project Description
 
-This portfolio showcases my profile, technical skills, education, projects and contact information through a clean, dark and elegant web interface with a gold accent color. The whole website is designed and styled with my own HTML and CSS code, with a small amount of plain JavaScript for the mobile menu and scroll animations. No Bootstrap, Tailwind CSS, UI frameworks or downloaded templates were used.
+This portfolio showcases my profile, technical skills, education, projects and contact information through a clean, dark and elegant web interface with a gold accent color. The whole website is designed and styled with my own HTML and CSS code. No Bootstrap, Tailwind CSS, UI frameworks, downloaded templates or JavaScript were used.
 
 ## Technologies Used
 
 - **HTML5**: semantic page structure
 - **CSS3**: custom styling, Flexbox/Grid layouts, media queries, hover effects and animations
-- **JavaScript (vanilla)**: a small script for the mobile menu toggle and scroll-reveal animations (no libraries or frameworks)
 - **Git & GitHub**: version control and repository hosting
 - **Netlify**: website deployment
 
 ## Website Features
 
 - Fully responsive design (desktop, laptop, tablet and mobile)
-- Sticky navigation bar with working links to every section and a menu button on mobile
+- Sticky navigation bar with working links to every section and a CSS-only menu icon on mobile
 - Hero section with name, tagline, short introduction, profile image and call-to-action buttons
 - Skill cards for the technologies I use
 - Education section showing my academic journey
 - Project cards with thumbnail, description, technologies used and project links
 - "Beyond Coding" section (MUN, debating, organization and volunteering)
 - Contact section with email, phone, location, social links and a contact form UI (Name, Email, Subject, Message)
-- Smooth scrolling and scroll-reveal animations
+- Smooth scrolling and CSS scroll-reveal animations
 - Smooth hover effects on buttons, links and cards
 - Consistent dark and gold color theme with good contrast and readable typography
 - Footer with copyright and quick navigation links

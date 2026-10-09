@@ -1984,13 +1984,7 @@ html {
 }
 
 
-/* =====================================================
-   CSS-ONLY BEHAVIOUR (no JavaScript used on this site)
-   ===================================================== */
 
-
-/* Scroll-reveal animation: content is always visible by default.
-   Browsers that support scroll-driven animations add a soft fade-up. */
 .reveal {
     opacity: 1;
     transform: none;
@@ -2027,62 +2021,42 @@ html {
 }
 
 
-/* Mobile navigation: a swipeable link bar under the logo (no menu button) */
+
+.menu-toggle,
+.menu-close {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    line-height: 1;
+    padding: 6px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle:hover,
+.menu-close:hover {
+    color: var(--gold-light);
+    transform: scale(1.08);
+}
+
 @media (max-width: 800px) {
 
-    html {
-        scroll-padding-top: 125px;
+    .menu-toggle {
+        display: flex;
     }
 
-    .header {
-        height: 104px;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .navbar {
-        position: static;
-        width: 100%;
-        padding: 0 0 6px;
-        background: transparent;
-        border-bottom: none;
-        flex-direction: row;
-        align-items: center;
-        gap: 22px;
+    .navbar:target {
         opacity: 1;
         visibility: visible;
-        transform: none;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        transform: translateY(0);
     }
 
-    .navbar::-webkit-scrollbar {
+    .nav-container:has(.navbar:target) .menu-toggle {
         display: none;
     }
 
-    .navbar a {
-        flex: 0 0 auto;
-        padding: 6px 0;
-    }
-
-    .navbar a:not(.hire-btn)::after {
-        bottom: 0;
-    }
-
-    .hire-btn {
-        margin-left: 0;
-        padding: 8px 16px;
-    }
-
-    .hero {
-        padding-top: 150px;
+    .nav-container:has(.navbar:target) .menu-close {
+        display: flex;
     }
 
 }
