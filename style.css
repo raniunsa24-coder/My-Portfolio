@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
 
+/* ===== THEME: colour variables used across the whole website ===== */
 :root {
     --bg: #080808;
     --bg-light: #101010;
@@ -12,6 +13,7 @@
 }
 
 
+/* ===== RESET: remove default spacing and use border-box sizing ===== */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,7 @@
 }
 
 
+/* ===== PAGE BASICS: smooth scrolling, body and shared container ===== */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
@@ -101,6 +104,7 @@ button {
 }
 
 
+/* ===== HEADER AND NAVIGATION ===== */
 .header {
     position: fixed;
     top: 0;
@@ -215,6 +219,7 @@ button {
 }
 
 
+/* ===== Mobile menu icon (hidden on desktop) ===== */
 .menu-toggle {
     display: none;
     border: none;
@@ -224,6 +229,7 @@ button {
 }
 
 
+/* ===== HERO SECTION ===== */
 .hero {
     min-height: 100vh;
     padding: 145px 0 80px;
@@ -308,6 +314,7 @@ button {
 }
 
 
+/* ===== BUTTONS (primary and outline) with hover effects ===== */
 .btn {
     position: relative;
     display: inline-flex;
@@ -382,6 +389,7 @@ button {
 }
 
 
+/* ===== Hero statistics and profile image frame ===== */
 .hero-stats {
     display: flex;
     gap: 65px;
@@ -504,6 +512,7 @@ section {
 }
 
 
+/* ===== SHARED SECTION HEADINGS ===== */
 .section-heading {
     max-width: 700px;
     margin-bottom: 65px;
@@ -533,6 +542,7 @@ p {
     letter-spacing: 0.1px;
 }
 
+/* ===== ABOUT SECTION ===== */
 .about {
     background: var(--bg-light);
 }
@@ -581,6 +591,7 @@ p {
 }
 
 
+/* ===== SKILLS SECTION: grid of skill cards ===== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -672,6 +683,7 @@ p {
 }
 
 
+/* ===== EDUCATION SECTION ===== */
 .education {
     background: var(--bg-light);
 }
@@ -733,6 +745,7 @@ p {
 }
 
 
+/* ===== PROJECTS SECTION: grid of project cards ===== */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -873,6 +886,7 @@ p {
     width: 100%;
 }
 
+/* ===== ACTIVITIES SECTION ===== */
 .activities {
     background: var(--bg-light);
 }
@@ -944,6 +958,7 @@ p {
 }
 
 
+/* ===== CONTACT SECTION: contact details ===== */
 .contact {
     background: var(--bg);
 }
@@ -1039,6 +1054,7 @@ p {
 }
 
 
+/* ===== Contact form fields ===== */
 .form-group {
     margin-bottom: 23px;
 }
@@ -1102,6 +1118,7 @@ p {
 }
 
 
+/* ===== FOOTER ===== */
 .footer {
     padding: 28px 0;
     border-top: 1px solid var(--border);
@@ -1145,6 +1162,7 @@ p {
 }
 
 
+/* ===== SCROLL ANIMATION: cards fade in while scrolling ===== */
 .reveal {
     opacity: 0;
     transform: translateY(45px);
@@ -1383,6 +1401,7 @@ p {
 }
 
 
+/* ===== RESPONSIVE DESIGN: laptop and tablet screens ===== */
 @media (max-width: 1050px) {
 
     .hero-content {
@@ -1408,6 +1427,7 @@ p {
 }
 
 
+/* ===== RESPONSIVE DESIGN: tablet and mobile (menu icon, single column layouts) ===== */
 @media (max-width: 800px) {
 
     .header {
@@ -1523,6 +1543,7 @@ p {
 }
 
 
+/* ===== RESPONSIVE DESIGN: small mobile screens ===== */
 @media (max-width: 550px) {
 
     .container {
@@ -1641,6 +1662,7 @@ p {
 }
 
 
+/* ===== RESPONSIVE DESIGN: very small screens ===== */
 @media (max-width: 380px) {
 
     .hero h1 {
@@ -1670,6 +1692,7 @@ p {
 }
 
 
+/* ===== ACCESSIBILITY: reduce animations for users who prefer less motion ===== */
 @media (prefers-reduced-motion: reduce) {
 
     html {
@@ -1990,6 +2013,7 @@ html {
     transform: none;
 }
 
+/* ===== Scroll-reveal keyframes ===== */
 @keyframes revealUp {
     from {
         opacity: 0;
@@ -2022,6 +2046,7 @@ html {
 
 
 
+/* ===== CSS-ONLY MOBILE MENU: the icon links to #navbar and :target opens the menu ===== */
 .menu-toggle,
 .menu-close {
     display: none;
